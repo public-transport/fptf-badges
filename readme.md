@@ -12,11 +12,11 @@ Generate [FPTF](https://github.com/public-transport/friendly-public-transport-fo
 Uses FPTF version information from the `fptf` key\* in your repo's `package.json` file. Get the badge for `username/repository` as follows:
 
 ```md
-[![fptf version](https://fptf.badges.juliustens.eu/username/repository)]
+![fptf version](https://fptf.badges.juliustens.eu/username/repository)]
 ```
 
-[![fptf version](https://fptf.badges.juliustens.eu/juliuste/fptf-badges)]
-[![fptf version](https://fptf.badges.juliustens.eu/juliuste/boilerplate)]
+![fptf version](https://fptf.badges.juliustens.eu/juliuste/fptf-badges)]
+![fptf version](https://fptf.badges.juliustens.eu/juliuste/boilerplate)]
 
 \* See [this issue](https://github.com/public-transport/friendly-public-transport-format/issues/32) for further information
 
