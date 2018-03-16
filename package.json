@@ -1,0 +1,41 @@
+{
+	"name": "fptf-badges",
+	"description": "FPTF badges",
+	"version": "0.0.0",
+	"keywords": [
+		"fptf",
+		"badge",
+		"shield"
+	],
+	"fptf": "1.0.1",
+	"author": "Julius Tens <mail@juliustens.eu>",
+	"homepage": "https://github.com/juliuste/fptf-badges",
+	"repository": "juliuste/fptf-badges",
+	"bugs": "https://github.com/juliuste/fptf-badges/issues",
+	"main": "./index.js",
+	"dependencies": {
+		"compression": "^1.7.2",
+		"config": "^1.30.0",
+		"corser": "^2.0.1",
+		"express": "^4.16.2",
+		"fetch-ponyfill": "^6.0.0",
+		"gh-badges": "^1.3.0",
+		"hosted-git-info": "^2.6.0",
+		"nocache": "^2.0.0",
+		"pify": "^3.0.0",
+		"pinkie-promise": "^2.0.1"
+	},
+	"peerDependencies": {
+		"forever": "^0.15.3"
+	},
+	"scripts": {
+		"start": "forever start --uid fptf-badges -a index.js",
+		"stop": "forever stop fptf-badges",
+		"ssh": "ssh meinfernbus",
+		"deploy": "./deploy"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"license": "ISC"
+}

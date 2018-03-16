@@ -1,0 +1,13 @@
+#!/bin/sh
+
+rsync -rav --delete \
+	--exclude '.*' \
+	--exclude node_modules \
+	. 'enceladus:~/fptf-badges/'
+
+ssh enceladus "\
+cd ~/fptf-badges
+npm i
+npm update
+forever stop fptf-badges
+forever start -a --uid fptf-badges index.js"
