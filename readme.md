@@ -9,16 +9,30 @@ Generate [FPTF](https://github.com/public-transport/friendly-public-transport-fo
 
 ## Usage
 
-Uses FPTF version information from the `fptf` key\* in your repo's `package.json` file. Get the badge for `username/repository` as follows:
-
-```md
-![fptf version](https://fptf.badges.juliustens.eu/username/repository)
-```
-
-![fptf version](https://fptf.badges.juliustens.eu/juliuste/fptf-badges)
-![fptf version](https://fptf.badges.juliustens.eu/juliuste/boilerplate)
+Uses FPTF version information from the `fptf` key\* in your repo's `package.json` file.
 
 \* See [this issue](https://github.com/public-transport/friendly-public-transport-format/issues/32) for further information
+
+### Badge (image)
+
+Get the badge for `username/repository` as follows:
+
+```md
+![fptf version](https://fptf.badges.juliustens.eu/badge/username/repository)
+```
+
+### FPTF version link
+
+Get the link to the specific FPTF version as follows:
+
+```md
+![fptf version](https://fptf.badges.juliustens.eu/link/username/repository)
+```
+
+### Combined (example badges)
+
+[![fptf version](https://fptf.badges.juliustens.eu/badge/juliuste/fptf-badges)](https://fptf.badges.juliustens.eu/link/juliuste/fptf-badges)
+[![fptf version](https://fptf.badges.juliustens.eu/badge/juliuste/boilerplate)](https://fptf.badges.juliustens.eu/link/juliuste/boilerplate)
 
 ## Contributing
 

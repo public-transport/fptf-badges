@@ -7,7 +7,8 @@ const corser = require('corser')
 const compression = require('compression')
 const nocache = require('nocache')
 
-const route = require('./route')
+const badge = require('./routes/badge')
+const link = require('./routes/link')
 
 const api = express()
 const server = http.createServer(api)
@@ -18,7 +19,8 @@ api.use(compression())
 const noCache = nocache()
 
 
-api.get('*', route)
+api.get('/badge/*', badge)
+api.get('/link/*', link)
 
 api.use((err, req, res, next) => {
 	if (res.headersSent) return next()

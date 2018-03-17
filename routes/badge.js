@@ -19,7 +19,7 @@ const badge = (text, color) => pify(badges, {errorFirst: false})({
 })
 
 const route = async (req, res, next) => {
-    const path = req.path.slice(1)
+    const path = req.path.slice('/badge/'.length) // todo
     const repo = githubInfo.fromUrl(path)
     // todo
     if(!repo || !repo.file) return next(error('invalid github repository', 400))
