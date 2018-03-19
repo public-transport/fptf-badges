@@ -9,9 +9,7 @@ Generate [FPTF](https://github.com/public-transport/friendly-public-transport-fo
 
 ## Usage
 
-Uses FPTF version information from the `fptf` key\* in your repo's `package.json` file.
-
-\* See [this issue](https://github.com/public-transport/friendly-public-transport-format/issues/32) for further information
+Uses FPTF version information from the `fptf` key in the `validate-fptf` version used in your packages `dependencies` or `devDependencies`.
 
 ### Badge (image)
 
@@ -32,7 +30,6 @@ Get the link to the specific FPTF version as follows:
 ### Combined (example badges)
 
 [![fptf version](https://fptf.badges.juliustens.eu/badge/juliuste/fptf-badges)](https://fptf.badges.juliustens.eu/link/juliuste/fptf-badges)
-[![fptf version](https://fptf.badges.juliustens.eu/badge/juliuste/boilerplate)](https://fptf.badges.juliustens.eu/link/juliuste/boilerplate)
 
 ## Contributing
 
