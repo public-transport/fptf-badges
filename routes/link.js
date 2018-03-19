@@ -1,8 +1,8 @@
 'use strict'
 
 const githubInfo = require('hosted-git-info')
-const Promise = require('pinkie-promise')
-const {fetch} = require('fetch-ponyfill')({Promise})
+
+const getVersion = require('../lib')
 
 const error = (msg, code) => {
 	const e = new Error(msg)
@@ -12,15 +12,14 @@ const error = (msg, code) => {
 
 const route = async (req, res, next) => {
     const path = req.path.slice('/link/'.length) // todo
-    const repo = githubInfo.fromUrl(path)
-    // todo
-    if(!repo || !repo.file) return next(error('invalid github repository', 400))
+	const repo = githubInfo.fromUrl(path)
+	const fptf = await (getVersion(repo).catch(e => {
+		next(error(e, 400))
+		return null
+	}))
+	if(!fptf) return
 
-    const packageURL = repo.file('package.json')
-    const packageContent = await (fetch(packageURL).then(res => res.json()).catch(e => null))
-    if(!packageContent) return next(error('repository / package.json not found'))
-
-    res.redirect(`https://github.com/public-transport/friendly-public-transport-format/tree/${packageContent.fptf}`)
+    res.redirect(`https://github.com/public-transport/friendly-public-transport-format/tree/${fptf}`)
 	return
 }
 
