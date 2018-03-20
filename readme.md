@@ -29,7 +29,11 @@ Get the link to the specific FPTF version as follows:
 
 ### Combined (example badges)
 
-[![fptf version](https://fptf.badges.juliustens.eu/badge/juliuste/fptf-badges)](https://fptf.badges.juliustens.eu/link/juliuste/fptf-badges)
+```md
+[![fptf version](https://fptf.badges.juliustens.eu/badge/public-transport/hafas-client)](https://fptf.badges.juliustens.eu/link/public-transport/hafas-client)
+```
+
+[![fptf version](https://fptf.badges.juliustens.eu/badge/public-transport/hafas-client)](https://fptf.badges.juliustens.eu/link/public-transport/hafas-client)
 
 ## Contributing
 
