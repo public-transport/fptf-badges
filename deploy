@@ -3,11 +3,11 @@
 rsync -rav --delete \
 	--exclude '.*' \
 	--exclude node_modules \
-	. 'enceladus:~/fptf-badges/'
+	. 'europa:~/fptf-badges/'
 
-ssh enceladus "\
+ssh europa "\
 cd ~/fptf-badges
 npm i
 npm update
-forever stop fptf-badges
-forever start -a --uid fptf-badges index.js"
+forever-service delete fptf-badges
+forever-service install fptf-badges --start -s index.js"

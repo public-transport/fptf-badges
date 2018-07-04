@@ -27,12 +27,7 @@
 	"peerDependencies": {
 		"forever": "^0.15.3"
 	},
-	"scripts": {
-		"start": "forever start --uid fptf-badges -a index.js",
-		"stop": "forever stop fptf-badges",
-		"ssh": "ssh meinfernbus",
-		"deploy": "./deploy"
-	},
+	"scripts": {},
 	"engines": {
 		"node": ">=8"
 	},
