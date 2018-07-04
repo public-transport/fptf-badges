@@ -24,15 +24,12 @@
 		"pify": "^3.0.0",
 		"pinkie-promise": "^2.0.1"
 	},
-	"peerDependencies": {
-		"forever": "^0.15.3"
+	"devDependencies": {
+		"validate-fptf": "^2.1.1"
 	},
 	"scripts": {},
 	"engines": {
 		"node": ">=8"
 	},
-	"license": "ISC",
-	"devDependencies": {
-		"validate-fptf": "^2.1.1"
-	}
+	"license": "ISC"
 }
