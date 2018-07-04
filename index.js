@@ -5,7 +5,6 @@ const express = require('express')
 const http = require('http')
 const corser = require('corser')
 const compression = require('compression')
-const nocache = require('nocache')
 
 const badge = require('./routes/badge')
 const link = require('./routes/link')
@@ -16,7 +15,6 @@ const server = http.createServer(api)
 const allowed = corser.simpleRequestHeaders.concat(['User-Agent'])
 api.use(corser.create({requestHeaders: allowed})) // CORS
 api.use(compression())
-const noCache = nocache()
 
 
 api.get('/badge/*', badge)
