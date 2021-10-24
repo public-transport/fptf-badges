@@ -1,12 +1,10 @@
+# general
 .DS_Store
-Thumbs.db
+*.log
 
-.nvm-version
+# node-specific
 node_modules
-npm-debug.log
-
-.scaleway
-config/*
-!config/default.json
-
 package-lock.json
+yarn.lock
+shrinkwrap.yaml
+dist

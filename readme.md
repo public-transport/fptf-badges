@@ -2,10 +2,7 @@
 
 Generate [FPTF](https://github.com/public-transport/friendly-public-transport-format) badges for your repo.
 
-[![dependency status](https://img.shields.io/david/juliuste/fptf-badges.svg)](https://david-dm.org/juliuste/fptf-badges)
-[![dev dependency status](https://img.shields.io/david/dev/juliuste/fptf-badges.svg)](https://david-dm.org/juliuste/fptf-badges#info=devDependencies)
-[![license](https://img.shields.io/github/license/juliuste/fptf-badges.svg?style=flat)](LICENSE)
-[![chat on gitter](https://badges.gitter.im/juliuste.svg)](https://gitter.im/juliuste)
+[![License](https://img.shields.io/github/license/juliuste/fptf-badges.svg?style=flat)](license)
 
 ## Usage
 
@@ -37,4 +34,4 @@ Get the link to the specific FPTF version as follows:
 
 ## Contributing
 
-If you found a bug, want to propose a feature or feel the urge to complain about your life, feel free to visit [the issues page](https://github.com/juliuste/fptf-badges/issues).
+If you found a bug or want to propose a feature, feel free to visit [the issues page](https://github.com/public-transport/fptf-badges/issues).
