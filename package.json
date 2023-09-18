@@ -39,7 +39,7 @@
 		"validate-fptf": "^2.1.1"
 	},
 	"engines": {
-		"node": ">=14"
+		"node": ">=18"
 	},
 	"license": "ISC"
 }
